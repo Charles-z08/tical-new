@@ -1,8 +1,6 @@
 we propose Typicalness-aware MultimodA Consistency learning (TiMAC) for MER. he core idea of TiMAC is to estimate unimodal emotion labels and evaluate their typicality to enable dynamic, stage-wise optimization of the model.
 - We first identify the intrinsic challenge of {inter-modal emotion conflicts} in the  MER, wherein different modalities within the same sample may convey conflicting emotional expressions. 
 - We propose a novel paradigm **TiMAC**—for MER. By assessing the inconsistency of training samples through diacritic unimodal labels and typicalness, TiMAC captures the divergent emotional tendency of each modality and adjusts the optimization as human-like emotion perception.
-- In general,  the proposed GD paradigm provides a flexible knowledge transfer manner where the **distillation weights** can be automatically learned, thus enabling **diverse crossmodal knowledge transfer** patterns.
-
 
 ## The motivation.
 <div align=center><img src="assets/motivation.png" width="100%"></img></div>
