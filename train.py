@@ -1,0 +1,7 @@
+"""
+Training script for TMR
+"""
+from run import DMD_run
+
+DMD_run(model_name='dmd', dataset_name='mosei', is_tune=False, seeds=[1111], model_save_dir="./pt",
+         res_save_dir="./result", log_dir="./log", mode='train', is_distill=True, gpu_ids=[0])
