@@ -1,18 +1,18 @@
-we propose Typicalness-aware MultimodA Consistency learning (TiMER) for MER. he core idea of TiMER is to estimate unimodal emotion labels and evaluate their typicality to enable dynamic, stage-wise optimization of the model.
+we propose Typicalness-based Inter-modal Consistency-Awware learning (TiCAL) for MER. he core idea of TiCAL is to estimate unimodal emotion labels and evaluate their typicality to enable dynamic, stage-wise optimization of the model.
 - We first identify the intrinsic challenge of {inter-modal emotion conflicts} in the  MER, wherein different modalities within the same sample may convey conflicting emotional expressions. 
-- We propose a novel paradigm **TiMER**—for MER. By assessing the inconsistency of training samples through diacritic unimodal labels and typicalness, TiMER captures the divergent emotional tendency of each modality and adjusts the optimization as human-like emotion perception.
+- We propose a novel paradigm **TiCAL**—for MER. By assessing the inconsistency of training samples through diacritic unimodal labels and typicalness, TiCAL captures the divergent emotional tendency of each modality and adjusts the optimization as human-like emotion perception.
 
 ## The motivation.
 <div align=center><img src="assets/motivation.png" width="100%"></img></div>
 Problem:
 
 - Previous approaches often overlook a fundamental issue inherent to MER: the potential divergence in emotional expression across different modalities within the same sample (* inter-modal emotional conflicts *). 
-- This may introduce ambiguity during training, hinder effective feature learning and ultimately impair the overall performance of MER models.
+- Can we explicitly quantify and leverage inter-modal consistency to achieve human-like, conflict-aware multimodal fusion for emotion recognition?
 
 Motivation: 
-- (a) From the perspectives of psychology and neuroscience, the process of perceiving emotions from multiple sources can be divided into three stages: Early Perception (EP), Correlative Integration (CI), and Advanced Cognition (AC). In the EP stage, the brain processes unimodal stimuli and forms initial emotional perceptions, while in the CI and AC stages, it integrates and reconciles these inputs to develop a coherent emotional understanding.
-- (b) Can we simulate human-like emotion perception by dynamically modeling modality-specific emotional tendencies and integrating them through consistency-aware fusion?
-- (c) Align with the hierarchical nature of human emotional perception and.
+- (a) Human-like Stage-wise Framework: We propose TiCAL (Typicality-based Consistency-aware Learning), a novel framework that performs dynamic multi-stage fusion by leveraging inter-modal consistency and unimodal
+typicality, mimicking human-like emotion perception.
+- (b) Reliable Consistency Estimation: TiCAL captures unimodal emotional tendencies through pseudo-labels and introduces a typicality metric to assess their reliability, enabling robust and accurate consistency estimation across modalities.
 
 Core idea:
 
